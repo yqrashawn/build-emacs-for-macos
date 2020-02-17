@@ -132,8 +132,17 @@ class Build
     ].compact.join(':')
 
     configure_flags = [
+      '--with-mailutils',
+      '--with-x=no',
       '--with-ns',
       '--with-modules',
+      '--with-json',
+      '--with-harfbuzz',
+      '--with-imagemagick',
+      '--with-gif',
+      '--with-png',
+      '--with-jpeg',
+      '--with-gnutls',
       '--enable-locallisppath=' \
       '/Library/Application Support/Emacs/${version}/site-lisp:' \
       '/Library/Application Support/Emacs/site-lisp'
